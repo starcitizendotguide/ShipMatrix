@@ -47,7 +47,17 @@ public class ShipMatrix {
 
             //--- Parse
             JsonObject object = gson.fromJson(body, JsonObject.class);
-            object.getAsJsonArray("data").forEach(e -> matrix.add(e.getAsJsonObject()));
+            object.getAsJsonArray("data").forEach(e -> {
+
+                JsonObject entry = e.getAsJsonObject();
+
+                //--- Remove media
+                entry.remove("media");
+                entry.getAsJsonObject("manufacturer").remove("media");
+
+                matrix.add(entry);
+
+            });
 
             System.out.println(String.format("%d/%d", i, UPPER));
 
