@@ -133,6 +133,27 @@ public class CompareMatrix {
                 Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = e.getCompiledData().getFields();
                 Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_b = compareShip.getCompiledData().getFields();
 
+                //--- Clean
+                cd_values_a.forEach((parent, parents_a) -> parents_a.forEach((key, list) -> {
+                    Iterator<CompiledEntryContainer> iterator = list.iterator();
+                    while (iterator.hasNext()) {
+                        CompiledEntryContainer item = iterator.next();
+                        if(cd_values_b.containsKey(parent) && cd_values_b.get(parent).containsKey(key) && cd_values_b.get(parent).get(key).contains(item)) {
+                            Iterator<CompiledEntryContainer> iterator_b = cd_values_b.get(parent).get(key).iterator();
+                            boolean done = false;
+                            while (iterator_b.hasNext() && !done) {
+                                if(iterator_b.next().equals(item)) {
+                                    iterator_b.remove();
+                                    done = true;
+                                }
+                            }
+                            if(done) {
+                                iterator.remove();
+                            }
+                        }
+                    }
+                }));
+
                 //--- COMPILED-PARENT
                 cd_values_a.forEach((parent, parents_a) -> {
 

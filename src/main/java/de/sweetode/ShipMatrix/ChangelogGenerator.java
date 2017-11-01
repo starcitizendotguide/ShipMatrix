@@ -2,6 +2,7 @@ package de.sweetode.ShipMatrix;
 
 import de.sweetode.ShipMatrix.diff.Ship;
 import de.sweetode.ShipMatrix.diff.report.DiffReport;
+import de.sweetode.ShipMatrix.diff.types.DataField;
 import de.sweetode.ShipMatrix.diff.types.DataFields;
 import de.sweetode.ShipMatrix.diff.types.DiffTypes;
 
@@ -26,7 +27,6 @@ public class ChangelogGenerator {
     public ChangelogGenerator(Map<String, Map<Ship, DiffReport>> reports) {
         this.reports = reports;
     }
-
 
     public String generateHTML() {
 
@@ -57,16 +57,17 @@ public class ChangelogGenerator {
                     report.getShipFieldChanges().forEach(field -> {
 
                         builder.append("<li>");
+                        DataField _type = field.getDataType();
                         switch (field.getDiffType()) {
 
                             case ADDED:
-                                builder.append("Added ").append(field.getDataType().getName()).append(" ").append(field.getChanged());
+                                builder.append(String.format("Added <i>%s</i> (<code>%s%s</code>)", _type.getName(), field.getChanged(), _type.getUnit()));
                                 break;
                             case MODIFIED:
-                                builder.append("Modified ").append(field.getDataType().getName()).append(" from ").append(field.getOriginal()).append(" to ").append(field.getChanged());
+                                builder.append(String.format("Modified <i>%s</i> <code>%s%s</code> -> <code>%s%s</code>", _type.getName(), field.getOriginal(), _type.getUnit(), field.getChanged(), _type.getUnit()));
                                 break;
                             case REMOVED:
-                                builder.append("Removed ").append(field.getDataType().getName());
+                                builder.append(String.format("Removed <i>%s</i> (<code>%s%s</code>)", field.getDataType().getName(), field.getOriginal(), field.getDataType().getUnit()));
                                 break;
                         }
 
@@ -95,53 +96,15 @@ public class ChangelogGenerator {
                                     builder.append("<li>");
                                     switch (b.getDiffType()) {
                                         case ADDED:
-
-                                            switch (b.getDataType()) {
-
-                                                case PARENT:
-                                                    builder.append("Added ").append(b.getParent()).append(" ").append(b.getChanged());
-                                                    break;
-                                                case COMPONENT_TYPE:
-                                                    builder.append("Added ").append(b.getComponentType()).append(" ").append(b.getChanged());
-                                                    break;
-                                                case COMPONENT:
-                                                    builder.append("Added ").append(b.getComponentName());
-                                                    break;
-                                            }
-
+                                            builder.append(String.format("Added <i>%s</i> (<code>%s</code>)", b.getComponentName(), b.getChanged()));
                                             break;
+
                                         case MODIFIED:
-
-                                            switch (b.getDataType()) {
-
-                                                case PARENT:
-                                                    builder.append("Modified ").append(b.getParent()).append(" from ").append(b.getOriginal()).append(" to ").append(b.getChanged());
-                                                    break;
-                                                case COMPONENT_TYPE:
-                                                    builder.append("Modified ").append(b.getComponentType()).append(" from ").append(b.getOriginal()).append(" to ").append(b.getChanged());
-                                                    break;
-                                                case COMPONENT:
-                                                    builder.append("Modified ").append(b.getField().getName()).append(" from ").append(b.getOriginal()).append(" to ").append(b.getChanged());
-                                                    break;
-                                            }
-
+                                            builder.append(String.format("Modified <i>%s</i> <code>%s%s</code> -> <code>%s%s</code>", b.getField().getName(), b.getOriginal(), b.getField().getUnit(), b.getChanged(), b.getField().getUnit()));
                                             break;
 
                                         case REMOVED:
-
-                                            switch (b.getDataType()) {
-
-                                                case PARENT:
-                                                    builder.append("Removed ").append(b.getParent());
-                                                    break;
-                                                case COMPONENT_TYPE:
-                                                    builder.append("Removed ").append(b.getComponentType());
-                                                    break;
-                                                case COMPONENT:
-                                                    builder.append("Removed ").append(b.getComponentName());
-                                                    break;
-                                            }
-
+                                            builder.append(String.format("Removed <i>%s</i> (<code>%s%s</code>)", b.getComponentName(), b.getOriginal(), b.getField().getUnit()));
                                             break;
                                     }
                                     builder.append("</li>");

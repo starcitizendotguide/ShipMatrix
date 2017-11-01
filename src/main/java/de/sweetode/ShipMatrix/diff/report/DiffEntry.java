@@ -25,10 +25,20 @@ public class DiffEntry<T> {
     }
 
     public String getOriginal() {
+
+        if(this.original == null || this.original.isEmpty()) {
+            return "-";
+        }
+
         return this.original;
     }
 
     public String getChanged() {
+
+        if(this.changed == null || this.changed.isEmpty()) {
+            return "-";
+        }
+
         return this.changed;
     }
 }

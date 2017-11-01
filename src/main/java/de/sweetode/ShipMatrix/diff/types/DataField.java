@@ -6,4 +6,8 @@ public interface DataField {
 
     String getKey();
 
+    default String getUnit() {
+        return "<>";
+    }
+
 }

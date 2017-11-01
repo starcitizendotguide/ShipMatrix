@@ -2,8 +2,6 @@ package de.sweetode.ShipMatrix.diff.types.compiled;
 
 import de.sweetode.ShipMatrix.diff.types.DataField;
 
-import java.util.stream.Stream;
-
 public enum CompiledFields implements DataField {
 
     TYPE {
@@ -16,6 +14,11 @@ public enum CompiledFields implements DataField {
         public String getKey() {
             return "type";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     NAME {
         @Override
@@ -26,6 +29,11 @@ public enum CompiledFields implements DataField {
         @Override
         public String getKey() {
             return "name";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
     MOUNTS {
@@ -38,6 +46,12 @@ public enum CompiledFields implements DataField {
         public String getKey() {
             return "mounts";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
+
     },
     COMPONENT_SIZE {
         @Override
@@ -48,6 +62,11 @@ public enum CompiledFields implements DataField {
         @Override
         public String getKey() {
             return "component_size";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
     SIZE {
@@ -60,6 +79,11 @@ public enum CompiledFields implements DataField {
         public String getKey() {
             return "size";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     DETAILS {
         @Override
@@ -70,6 +94,11 @@ public enum CompiledFields implements DataField {
         @Override
         public String getKey() {
             return "details";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
     QUANTITY {
@@ -82,6 +111,11 @@ public enum CompiledFields implements DataField {
         public String getKey() {
             return "quantity";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     MANUFACTURER {
         @Override
@@ -93,6 +127,11 @@ public enum CompiledFields implements DataField {
         public String getKey() {
             return "manufacturer";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     CATEGORY {
         @Override
@@ -103,6 +142,11 @@ public enum CompiledFields implements DataField {
         @Override
         public String getKey() {
             return "category";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     };
 

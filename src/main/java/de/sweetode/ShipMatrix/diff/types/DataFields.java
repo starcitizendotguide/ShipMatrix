@@ -34,6 +34,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "length";
         }
+
+        @Override
+        public String getUnit() {
+            return "m";
+        }
     },
     BEAM {
         @Override
@@ -45,6 +50,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "beam";
         }
+
+        @Override
+        public String getUnit() {
+            return "m";
+        }
     },
     HEIGHT {
         @Override
@@ -55,6 +65,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "height";
+        }
+
+        @Override
+        public String getUnit() {
+            return "m";
         }
     },
     SIZE {
@@ -78,6 +93,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "mass";
         }
+
+        @Override
+        public String getUnit() {
+            return "m";
+        }
     },
     TYPE {
         @Override
@@ -100,6 +120,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "min_crew";
         }
+
+        @Override
+        public String getUnit() {
+            return "persons";
+        }
     },
     MAX_CREW {
         @Override
@@ -110,6 +135,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "max_crew";
+        }
+
+        @Override
+        public String getUnit() {
+            return "persons";
         }
     },
     SCM_SPEED {
@@ -122,6 +152,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "scm_speed";
         }
+
+        @Override
+        public String getUnit() {
+            return "m/s";
+        }
     },
     AFTERBURNER_SPEED {
         @Override
@@ -132,6 +167,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "afterburner_speed";
+        }
+
+        @Override
+        public String getUnit() {
+            return "m/s";
         }
     },
     PITCH_MAX {
@@ -144,6 +184,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "pitch_max";
         }
+
+        @Override
+        public String getUnit() {
+            return "deg/s";
+        }
     },
     YAW_MAX {
         @Override
@@ -154,6 +199,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "yaw_max";
+        }
+
+        @Override
+        public String getUnit() {
+            return "deg/s";
         }
     },
     ROLL_MAX {
@@ -166,6 +216,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "roll_max";
         }
+
+        @Override
+        public String getUnit() {
+            return "deg/s";
+        }
     },
     XAXIS_ACCELERATION {
         @Override
@@ -176,6 +231,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "xaxis_acceleration";
+        }
+
+        @Override
+        public String getUnit() {
+            return "m/s";
         }
     },
     YAXIS_ACCELERATION {
@@ -188,6 +248,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "yaxis_acceleration";
         }
+
+        @Override
+        public String getUnit() {
+            return "m/s";
+        }
     },
     ZAXIS_ACCELERATION {
         @Override
@@ -198,6 +263,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "zaxis_acceleration";
+        }
+
+        @Override
+        public String getUnit() {
+            return "m/s";
         }
     },
     MANUFACTURER_ID {

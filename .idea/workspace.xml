@@ -2,25 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f0e5783-e2ca-4715-a541-2d8539ddd8df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ChangelogGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/Manufacturer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/Ship.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DiffTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/ManufacturerFields.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledDiffEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/component/ComponentTypeFields.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/ChangelogGenerator$1.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/ChangelogGenerator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/ChangelogGenerator.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/ChangelogGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/report/DiffEntry.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/report/DiffEntry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataField.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataField.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$10.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$11.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$12.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$13.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$14.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$15.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$16.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$17.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$18.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$19.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$20.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$21.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$22.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$23.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$24.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$3.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$4.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$5.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$6.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$7.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$8.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$9.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/DataFields.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$1.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$2.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$3.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$4.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$5.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$6.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$7.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$8.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$9.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.class" afterPath="$PROJECT_DIR$/target/classes/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StarCitizenShipMatrix.iml" afterPath="$PROJECT_DIR$/StarCitizenShipMatrix.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ShipMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ShipMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ChangelogGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ChangelogGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java" afterPath="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,39 +59,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompareMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java">
+      <file leaf-file-name="DataFields.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state relative-caret-position="22">
+              <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3257#3520#0" expanded="false" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1813#1814#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2345#2346#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2647#2648#0" expanded="true" />
+                <element signature="e#2816#2817#0" expanded="true" />
+                <element signature="e#2858#2859#0" expanded="true" />
+                <element signature="e#2911#2912#0" expanded="true" />
+                <element signature="e#2947#2948#0" expanded="true" />
+                <element signature="e#3235#3236#0" expanded="true" />
+                <element signature="e#3271#3272#0" expanded="true" />
+                <element signature="e#3536#3537#0" expanded="true" />
+                <element signature="e#3574#3575#0" expanded="true" />
+                <element signature="e#3833#3834#0" expanded="true" />
+                <element signature="e#3871#3872#0" expanded="true" />
+                <element signature="e#4133#4134#0" expanded="true" />
+                <element signature="e#4171#4172#0" expanded="true" />
+                <element signature="e#4463#4464#0" expanded="true" />
+                <element signature="e#4499#4500#0" expanded="true" />
+                <element signature="e#4791#4792#0" expanded="true" />
+                <element signature="e#4827#4828#0" expanded="true" />
+                <element signature="e#5119#5120#0" expanded="true" />
+                <element signature="e#5155#5156#0" expanded="true" />
+                <element signature="e#5865#5866#0" expanded="true" />
+                <element signature="e#5903#5904#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangelogGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiffEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangelogGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ChangelogGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="43" column="93" lean-forward="false" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+            <state relative-caret-position="154">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
                 <element signature="method#generateText#0;class#ChangelogGenerator#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiffReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffReport.java">
+      <file leaf-file-name="CompareMatrix.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="396">
+              <caret line="342" column="1" lean-forward="true" selection-start-line="342" selection-start-column="1" selection-end-line="342" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2912#3175#0" expanded="false" />
+                <element signature="e#3257#3520#0" expanded="false" />
+                <element signature="e#9226#13430#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompiledEntryContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,81 +154,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentTypeFields.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/component/ComponentTypeFields.java">
+      <file leaf-file-name="CompiledDiffEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledDiffEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="176" column="17" lean-forward="true" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+            <state relative-caret-position="110">
+              <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1237#1238#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-                <element signature="e#1371#1372#0" expanded="true" />
-                <element signature="e#1444#1445#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1656#1657#0" expanded="true" />
-                <element signature="e#1703#1704#0" expanded="true" />
-                <element signature="e#1755#1756#0" expanded="true" />
-                <element signature="e#1802#1803#0" expanded="true" />
-                <element signature="e#1889#1890#0" expanded="true" />
-                <element signature="e#1943#1944#0" expanded="true" />
-                <element signature="e#1995#1996#0" expanded="true" />
-                <element signature="e#2049#2050#0" expanded="true" />
-                <element signature="e#2120#2121#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
-                <element signature="e#2210#2211#0" expanded="true" />
-                <element signature="e#2248#2249#0" expanded="true" />
-                <element signature="e#2323#2324#0" expanded="true" />
-                <element signature="e#2365#2366#0" expanded="true" />
-                <element signature="e#2417#2418#0" expanded="true" />
-                <element signature="e#2459#2460#0" expanded="true" />
-                <element signature="e#2537#2538#0" expanded="true" />
-                <element signature="e#2582#2583#0" expanded="true" />
-                <element signature="e#2634#2635#0" expanded="true" />
-                <element signature="e#2679#2680#0" expanded="true" />
-                <element signature="e#2755#2756#0" expanded="true" />
-                <element signature="e#2798#2799#0" expanded="true" />
-                <element signature="e#2850#2851#0" expanded="true" />
-                <element signature="e#2893#2894#0" expanded="true" />
-                <element signature="e#2973#2974#0" expanded="true" />
-                <element signature="e#3020#3021#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-                <element signature="e#3119#3120#0" expanded="true" />
-                <element signature="e#3197#3198#0" expanded="true" />
-                <element signature="e#3242#3243#0" expanded="true" />
-                <element signature="e#3294#3295#0" expanded="true" />
-                <element signature="e#3339#3340#0" expanded="true" />
-                <element signature="e#3423#3424#0" expanded="true" />
-                <element signature="e#3474#3475#0" expanded="true" />
-                <element signature="e#3526#3527#0" expanded="true" />
-                <element signature="e#3577#3578#0" expanded="true" />
-                <element signature="e#3650#3651#0" expanded="true" />
-                <element signature="e#3690#3691#0" expanded="true" />
-                <element signature="e#3742#3743#0" expanded="true" />
-                <element signature="e#3782#3783#0" expanded="true" />
-                <element signature="e#3863#3864#0" expanded="true" />
-                <element signature="e#3911#3912#0" expanded="true" />
-                <element signature="e#3963#3964#0" expanded="true" />
-                <element signature="e#4011#4012#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,10 +169,21 @@
       <file leaf-file-name="CompiledData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="47">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#175#176#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,10 +192,27 @@
       <file leaf-file-name="CompiledFields.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="106" column="6" lean-forward="false" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+            <state relative-caret-position="22">
+              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1280#1281#0" expanded="true" />
+                <element signature="e#1313#1314#0" expanded="true" />
+                <element signature="e#1562#1563#0" expanded="true" />
+                <element signature="e#1595#1596#0" expanded="true" />
+                <element signature="e#1853#1854#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+                <element signature="e#2147#2148#0" expanded="true" />
+                <element signature="e#2180#2181#0" expanded="true" />
+                <element signature="e#2453#2454#0" expanded="true" />
+                <element signature="e#2486#2487#0" expanded="true" />
+                <element signature="e#2747#2748#0" expanded="true" />
+                <element signature="e#2780#2781#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -200,6 +241,12 @@
       <find>diffReportMap.</find>
       <find>data</find>
       <find>componenttype</find>
+      <find>[2</find>
+      <find>.ADDED</find>
+      <find>component</find>
+      <find>Impact.COMPONENT</find>
+      <find>Impact.COMPONENT,</find>
+      <find>COMPONent_TYPE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,26 +272,27 @@
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/ship/ShipFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/ship/ShipField.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/ship/DataField.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/ManufacturerFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/Manufacturer.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/Weapon.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/RSIWeapon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/CompiledFields.java" />
         <option value="$PROJECT_DIR$/data/test_b.json" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/Ship.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ShipMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledDiffEntry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/component/ComponentTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/component/ComponentFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledData.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/component/ComponentTypeFields.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ChangelogGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java" />
       </list>
     </option>
   </component>
@@ -262,7 +310,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="373" />
+    <option name="x" value="411" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -329,6 +377,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ShipMatrix" type="462c0819:PsiDirectoryNode" />
               <item name="diff" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarCitizenShipMatrix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StarCitizenShipMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ShipMatrix" type="462c0819:PsiDirectoryNode" />
+              <item name="diff" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StarCitizenShipMatrix" type="b2602c69:ProjectViewProjectNode" />
@@ -556,15 +614,16 @@
       <workItem from="1509190006657" duration="2581000" />
       <workItem from="1509382189380" duration="643000" />
       <workItem from="1509457135007" duration="236000" />
-      <workItem from="1509485947523" duration="27026000" />
+      <workItem from="1509485947523" duration="34875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30486000" />
+    <option name="totallyTimeSpent" value="38335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -587,7 +646,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46484786" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46484786" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -603,7 +662,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -711,14 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/Manufacturer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -774,16 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/30-10-2017.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -810,60 +851,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ShipMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledDiffEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="237" column="25" lean-forward="false" selection-start-line="237" selection-start-column="25" selection-end-line="237" selection-end-column="25" />
-          <folding>
-            <element signature="e#4613#4614#0" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="106" column="6" lean-forward="false" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,7 +871,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/component/ComponentTypeFields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="25">
           <caret line="176" column="17" lean-forward="true" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -955,26 +947,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3257#3520#0" expanded="false" />
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/report/DiffEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/DataFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding>
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2647#2648#0" expanded="true" />
+            <element signature="e#2816#2817#0" expanded="true" />
+            <element signature="e#2858#2859#0" expanded="true" />
+            <element signature="e#2911#2912#0" expanded="true" />
+            <element signature="e#2947#2948#0" expanded="true" />
+            <element signature="e#3235#3236#0" expanded="true" />
+            <element signature="e#3271#3272#0" expanded="true" />
+            <element signature="e#3536#3537#0" expanded="true" />
+            <element signature="e#3574#3575#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3871#3872#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4171#4172#0" expanded="true" />
+            <element signature="e#4463#4464#0" expanded="true" />
+            <element signature="e#4499#4500#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4827#4828#0" expanded="true" />
+            <element signature="e#5119#5120#0" expanded="true" />
+            <element signature="e#5155#5156#0" expanded="true" />
+            <element signature="e#5865#5866#0" expanded="true" />
+            <element signature="e#5903#5904#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/ChangelogGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="43" column="93" lean-forward="false" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="method#generateText#0;class#ChangelogGenerator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+            <element signature="e#2180#2181#0" expanded="true" />
+            <element signature="e#2453#2454#0" expanded="true" />
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2747#2748#0" expanded="true" />
+            <element signature="e#2780#2781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledDiffEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="method#generateText#0;class#ChangelogGenerator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="167" column="49" lean-forward="true" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/diff/types/compiled/CompiledEntryContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/sweetode/ShipMatrix/CompareMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="342" column="1" lean-forward="true" selection-start-line="342" selection-start-column="1" selection-end-line="342" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2912#3175#0" expanded="false" />
+            <element signature="e#3257#3520#0" expanded="false" />
+            <element signature="e#9226#13430#0" expanded="false" />
           </folding>
         </state>
       </provider>

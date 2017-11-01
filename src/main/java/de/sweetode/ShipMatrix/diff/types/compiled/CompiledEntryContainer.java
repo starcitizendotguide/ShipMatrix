@@ -31,4 +31,17 @@ public class CompiledEntryContainer {
 
     }
 
+    @Override
+    public boolean equals(Object o) {
+
+        if(o instanceof CompiledEntryContainer) {
+
+            CompiledEntryContainer other = (CompiledEntryContainer) o;
+            return other.getValues().equals(this.values);
+
+        }
+
+        return super.equals(o);
+    }
+
 }
