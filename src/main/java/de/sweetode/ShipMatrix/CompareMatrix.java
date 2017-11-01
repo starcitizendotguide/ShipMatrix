@@ -72,7 +72,6 @@ public class CompareMatrix {
     }
 
     public Map<Ship, DiffReport> diff_(File file_a, File file_b) throws IOException {
-
         JsonArray array_a = gson.fromJson(FileUtils.readFileToString(file_a, Charset.forName("UTF-8")), JsonArray.class);
         JsonArray array_b = gson.fromJson(FileUtils.readFileToString(file_b, Charset.forName("UTF-8")), JsonArray.class);
 
@@ -317,27 +316,22 @@ public class CompareMatrix {
 
     private static int compare(File a, File b) {
         String[] tmp_a = a.getName().split(File.pathSeparator);
-        String[] tmp_b = a.getName().split(File.pathSeparator);
+        String[] tmp_b = b.getName().split(File.pathSeparator);
 
         String date_string_a = tmp_a[tmp_a.length - 1];
-        String date_string_b = tmp_a[tmp_b.length - 1];
+        String date_string_b = tmp_b[tmp_b.length - 1];
 
         try {
             Date date_a = dateFormat.parse(date_string_a);
             Date date_b = dateFormat.parse(date_string_b);
 
-            if (date_a.after(date_b)) {
-                return 1;
-            } else if (date_a.before(date_b)) {
-                return -1;
-            }
+            return date_a.compareTo(date_b);
 
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
-        assert false;
-        return 0;
+        throw new IllegalStateException();
     }
 
 }

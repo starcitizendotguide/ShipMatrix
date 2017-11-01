@@ -16,12 +16,15 @@ public class CompiledDiffEntry extends DiffEntry<CompiledDiffEntry.Impact> {
     private CompiledFields field;
 
     public CompiledDiffEntry(CompiledFields field, DiffTypes diffType, String original, String changed) {
-        super(Impact.COMPONENT, diffType, original, changed);
+        super(Impact.COMPONENT_DATA, diffType, original, changed);
         this.field = field;
     }
 
     public CompiledDiffEntry(Impact impact, String name, DiffTypes diffType) {
         super(impact, diffType, null, null);
+        if(impact == Impact.COMPONENT_DATA) {
+            throw new IllegalStateException();
+        }
 
         switch (impact) {
 
@@ -54,7 +57,8 @@ public class CompiledDiffEntry extends DiffEntry<CompiledDiffEntry.Impact> {
 
         PARENT,
         COMPONENT_TYPE,
-        COMPONENT
+        COMPONENT,
+        COMPONENT_DATA
 
     }
 
