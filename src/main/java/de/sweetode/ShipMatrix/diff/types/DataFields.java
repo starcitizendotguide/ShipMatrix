@@ -12,6 +12,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "id";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     PRODUCTION_STATUS {
         @Override
@@ -22,6 +27,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "production_status";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
     LENGTH {
@@ -82,6 +92,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "size";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     MASS {
         @Override
@@ -108,6 +123,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "type";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
     MIN_CREW {
@@ -302,6 +322,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "name";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     FOCUS {
         @Override
@@ -312,6 +337,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "focus";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
     DESCRIPTION {
@@ -324,6 +354,11 @@ public enum DataFields implements DataField {
         public String getKey() {
             return "description";
         }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     },
     URL {
         @Override
@@ -334,6 +369,11 @@ public enum DataFields implements DataField {
         @Override
         public String getKey() {
             return "url";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
         }
     },
 

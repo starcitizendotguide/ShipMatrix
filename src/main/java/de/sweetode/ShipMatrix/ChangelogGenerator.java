@@ -125,7 +125,7 @@ public class ChangelogGenerator {
                                                     builder.append(String.format("Removed <i>%s</i> (<code>%s%s</code>)", b.getComponentName(), b.getOriginal(), b.getField().getUnit()));
                                                     break;
                                                 case COMPONENT:
-                                                    builder.append(String.format("Removed component <i>%s</i>", b.getComponentType()));
+                                                    builder.append(String.format("Removed <i>component</i> (<code>%s</code>)", b.getComponentName()));
                                                     break;
 
                                                 default: throw new IllegalStateException(b.getDataType().name());
