@@ -17,7 +17,7 @@ public class ShipMatrix {
 
     public static void main(String[] args) throws IOException {
         ShipMatrix matrix = new ShipMatrix();
-        FileUtils.writeStringToFile(new File("data.json"),  gson.toJson(matrix.fetch()), Charset.forName("UTF-8"));
+        FileUtils.writeStringToFile(new File("data.json"), gson.toJson(matrix.fetch()), Charset.forName("UTF-8"));
     }
 
 
