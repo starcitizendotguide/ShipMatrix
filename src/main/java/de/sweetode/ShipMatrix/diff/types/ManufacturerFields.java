@@ -1,5 +1,6 @@
 package de.sweetode.ShipMatrix.diff.types;
 
+
 public enum  ManufacturerFields implements DataField {
 
     ID {
@@ -12,6 +13,10 @@ public enum  ManufacturerFields implements DataField {
         public String getKey() {
             return "id";
         }
-    }
+    };
 
+    @Override
+    public String toString() {
+        return this.getName();
+    }
 }

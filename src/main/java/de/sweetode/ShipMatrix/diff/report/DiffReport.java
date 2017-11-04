@@ -19,6 +19,14 @@ public class DiffReport {
 
     public DiffReport() {}
 
+    public boolean detectedChanges() {
+        return (
+                    !(this.getTotalShipStatus() == null) ||
+                    !this.getShipFieldChanges().isEmpty() ||
+                    !this.getCompiledChanges().isEmpty()
+                );
+    }
+
     public DiffTypes getTotalShipStatus() {
         return totalShipStatus;
     }

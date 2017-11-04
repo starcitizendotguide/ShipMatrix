@@ -111,7 +111,7 @@ public enum DataFields implements DataField {
 
         @Override
         public String getUnit() {
-            return "m";
+            return "kg";
         }
     },
     TYPE {
@@ -375,6 +375,10 @@ public enum DataFields implements DataField {
         public String getUnit() {
             return "";
         }
-    },
+    };
 
+    @Override
+    public String toString() {
+        return this.getName();
+    }
 }

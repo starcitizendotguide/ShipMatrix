@@ -27,7 +27,7 @@ import java.util.*;
 public class CompareMatrix {
 
     private final static Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    private final static DateFormat dateFormat = new SimpleDateFormat("d-MM-y");
+    public final static DateFormat dateFormat = new SimpleDateFormat("d-MM-y");
 
     public CompareMatrix() { }
 
