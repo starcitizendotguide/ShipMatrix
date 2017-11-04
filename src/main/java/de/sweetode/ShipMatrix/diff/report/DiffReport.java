@@ -4,6 +4,7 @@ import de.sweetode.ShipMatrix.diff.types.DiffTypes;
 import de.sweetode.ShipMatrix.diff.types.DataField;
 import de.sweetode.ShipMatrix.diff.types.compiled.CompiledDiffEntry;
 import de.sweetode.ShipMatrix.diff.types.compiled.CompiledFields;
+import de.sweetode.ShipMatrix.diff.types.compiled.ParentTypes;
 import de.sweetode.ShipMatrix.diff.types.component.ComponentTypeFields;
 
 import java.util.LinkedHashMap;
@@ -15,7 +16,7 @@ public class DiffReport {
 
     private DiffTypes totalShipStatus = null;
     private List<DiffEntry<DataField>> shipFieldChanges = new LinkedList<>();
-    private Map<String, Map<ComponentTypeFields, Map<Integer, List<CompiledDiffEntry>>>> compiledChanges = new LinkedHashMap<>();
+    private Map<ParentTypes, Map<ComponentTypeFields, Map<Integer, List<CompiledDiffEntry>>>> compiledChanges = new LinkedHashMap<>();
 
     public DiffReport() {}
 
@@ -35,7 +36,7 @@ public class DiffReport {
         return shipFieldChanges;
     }
 
-    public Map<String, Map<ComponentTypeFields, Map<Integer, List<CompiledDiffEntry>>>> getCompiledChanges() {
+    public Map<ParentTypes, Map<ComponentTypeFields, Map<Integer, List<CompiledDiffEntry>>>> getCompiledChanges() {
         return compiledChanges;
     }
 
@@ -47,7 +48,7 @@ public class DiffReport {
         this.totalShipStatus = totalShipStatus;
     }
 
-    public void addCompiledChange(String parentType, ComponentTypeFields childType, int localId, CompiledDiffEntry diffEntry) {
+    public void addCompiledChange(ParentTypes parentType, ComponentTypeFields childType, int localId, CompiledDiffEntry diffEntry) {
 
         if(!(this.compiledChanges.containsKey(parentType))) {
             this.compiledChanges.put(parentType, new LinkedHashMap<>());

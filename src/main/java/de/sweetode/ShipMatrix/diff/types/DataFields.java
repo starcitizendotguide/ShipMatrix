@@ -143,7 +143,7 @@ public enum DataFields implements DataField {
 
         @Override
         public String getUnit() {
-            return "persons";
+            return " person(s)";
         }
     },
     MAX_CREW {
@@ -159,7 +159,7 @@ public enum DataFields implements DataField {
 
         @Override
         public String getUnit() {
-            return "persons";
+            return " person(s)";
         }
     },
     SCM_SPEED {
@@ -375,10 +375,38 @@ public enum DataFields implements DataField {
         public String getUnit() {
             return "";
         }
-    };
+    },
+    CARGO {
+        @Override
+        public String getName() {
+            return "Cargo Capacity";
+        }
 
-    @Override
-    public String toString() {
-        return this.getName();
+        @Override
+        public String getKey() {
+            return "cargocapacity";
+        }
+
+        @Override
+        public String getUnit() {
+            return "SCU";
+        }
+    },
+    PRODUCTION_NOTE {
+        @Override
+        public String getName() {
+            return "Production Note";
+        }
+
+        @Override
+        public String getKey() {
+            return "production_note";
+        }
+
+        @Override
+        public String getUnit() {
+            return "";
+        }
     }
+
 }

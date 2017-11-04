@@ -10,19 +10,19 @@ import java.util.Map;
 
 public class CompiledData {
 
-    private final Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields;
+    private final Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields;
 
-    public CompiledData(Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields) {
+    public CompiledData(Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields) {
         this.fields = fields;
     }
 
-    public Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> getFields() {
-        return fields;
+    public Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> getFields() {
+        return this.fields;
     }
 
     public static CompiledData parse(JsonObject e) {
 
-        Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields = new LinkedHashMap<>();
+        Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields = new LinkedHashMap<>();
 
         e.entrySet().forEach(parent -> {
 
@@ -35,7 +35,7 @@ public class CompiledData {
                 entries.put(ComponentTypeFields.byKey(entry.getKey()), containers);
 
             });
-            fields.put(parent.getKey(), entries);
+            fields.put(ParentTypes.byKey(parent.getKey()), entries);
 
         });
 

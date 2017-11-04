@@ -1,11 +1,6 @@
 package de.sweetode.ShipMatrix.diff.types.compiled;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonSerializationContext;
 import de.sweetode.ShipMatrix.diff.types.DataField;
-
-import java.lang.reflect.Type;
 
 public enum CompiledFields implements DataField {
 

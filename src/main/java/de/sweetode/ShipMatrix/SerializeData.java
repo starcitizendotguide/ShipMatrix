@@ -9,6 +9,7 @@ import de.sweetode.ShipMatrix.diff.types.DataFields;
 import de.sweetode.ShipMatrix.diff.types.DiffTypes;
 import de.sweetode.ShipMatrix.diff.types.ManufacturerFields;
 import de.sweetode.ShipMatrix.diff.types.compiled.CompiledFields;
+import de.sweetode.ShipMatrix.diff.types.compiled.ParentTypes;
 import de.sweetode.ShipMatrix.diff.types.component.ComponentTypeFields;
 import org.apache.commons.io.FileUtils;
 
@@ -71,6 +72,12 @@ public class SerializeData {
         Map<String, JsonElement> componentTypeFields = new LinkedHashMap<>();
         Stream.of(ComponentTypeFields.values()).forEach(e -> componentTypeFields.put(e.name(), e.serialize(e, null, null)));
         FileUtils.write(new File(String.format("%s\\componentTypeFields.json", file.getAbsolutePath())), gson.toJson(componentTypeFields), Charset.forName("UTF-8"));
+
+        //--- ComponentTypeFields
+        Map<String, JsonElement> parentTypes = new LinkedHashMap<>();
+        Stream.of(ParentTypes.values()).forEach(e -> parentTypes.put(e.name(), e.serialize(e, null, null)));
+        FileUtils.write(new File(String.format("%s\\parentTypes.json", file.getAbsolutePath())), gson.toJson(parentTypes), Charset.forName("UTF-8"));
+
 
         //--- Ship History
         Map<Integer, Map<String, Ship>> shipHistory = new HashMap<>();

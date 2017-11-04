@@ -18,6 +18,10 @@ import java.util.List;
 
 public class ShipMatrix {
 
+    public static void main(String[] args) throws IOException {
+        ShipMatrix matrix = new ShipMatrix();
+        matrix.execute();
+    }
 
     //---
     private final static OkHttpClient client = new OkHttpClient.Builder().build();

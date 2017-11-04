@@ -13,6 +13,7 @@ import de.sweetode.ShipMatrix.diff.types.DataField;
 import de.sweetode.ShipMatrix.diff.types.compiled.CompiledDiffEntry;
 import de.sweetode.ShipMatrix.diff.types.compiled.CompiledEntryContainer;
 import de.sweetode.ShipMatrix.diff.types.compiled.CompiledFields;
+import de.sweetode.ShipMatrix.diff.types.compiled.ParentTypes;
 import de.sweetode.ShipMatrix.diff.types.component.ComponentTypeFields;
 import org.apache.commons.io.FileUtils;
 
@@ -129,8 +130,8 @@ public class CompareMatrix {
                 });
 
                 //--- CompiledData
-                Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = e.getCompiledData().getFields();
-                Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_b = compareShip.getCompiledData().getFields();
+                Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = e.getCompiledData().getFields();
+                Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_b = compareShip.getCompiledData().getFields();
 
                 //--- Clean
                 cd_values_a.forEach((parent, parents_a) -> parents_a.forEach((key, list) -> {
@@ -252,8 +253,8 @@ public class CompareMatrix {
                 });
 
                 //--- CompiledData
-                Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_b = e.getCompiledData().getFields();
-                Map<String, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = compareShip.getCompiledData().getFields();
+                Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_b = e.getCompiledData().getFields();
+                Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = compareShip.getCompiledData().getFields();
 
                 //--- COMPILED-PARENT
                 cd_values_b.forEach((parent, parents_b) -> {
