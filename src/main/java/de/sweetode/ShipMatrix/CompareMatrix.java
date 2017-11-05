@@ -30,7 +30,7 @@ public class CompareMatrix {
     private final static Gson gson = new GsonBuilder().setPrettyPrinting().create();
     public final static DateFormat dateFormat = new SimpleDateFormat("d-MM-y");
 
-    public CompareMatrix() { }
+    public CompareMatrix() {}
 
     public Map<String, Map<Ship, DiffReport>> diffAll() throws IOException {
 
@@ -98,10 +98,10 @@ public class CompareMatrix {
 
         Map<Ship, DiffReport> diffReportMap = new LinkedHashMap<>();
 
-        store_a.forEach((id, e) -> {
+        store_a.forEach((id, ship) -> {
 
             DiffReport report = new DiffReport();
-            diffReportMap.put(e, report);
+            diffReportMap.put(ship, report);
 
             Ship compareShip = store_b.get(id);
 
@@ -113,7 +113,7 @@ public class CompareMatrix {
             else {
 
                 //--- DataFields
-                Map<DataField, String> df_values_a = e.getValues();
+                Map<DataField, String> df_values_a = ship.getValues();
                 Map<DataField, String> df_values_b = compareShip.getValues();
 
                 df_values_a.forEach((k, value_a) -> {
@@ -130,10 +130,11 @@ public class CompareMatrix {
                 });
 
                 //--- CompiledData
-                Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = e.getCompiledData().getFields();
+                Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_a = ship.getCompiledData().getFields();
                 Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> cd_values_b = compareShip.getCompiledData().getFields();
 
                 //--- Clean
+                List<CompiledEntryContainer> cd_values_a_ignore = new ArrayList<>();
                 cd_values_a.forEach((parent, parents_a) -> parents_a.forEach((key, list) -> {
                     Iterator<CompiledEntryContainer> iterator = list.iterator();
                     while (iterator.hasNext()) {
@@ -142,13 +143,14 @@ public class CompareMatrix {
                             Iterator<CompiledEntryContainer> iterator_b = cd_values_b.get(parent).get(key).iterator();
                             boolean done = false;
                             while (iterator_b.hasNext() && !done) {
-                                if(iterator_b.next().equals(item)) {
-                                    iterator_b.remove();
+                                CompiledEntryContainer cb = iterator_b.next();
+                                if(cb.equals(item)) {
+                                    cd_values_a_ignore.add(cb);
                                     done = true;
                                 }
                             }
                             if(done) {
-                                iterator.remove();
+                                cd_values_a_ignore.add(item);
                             }
                         }
                     }
@@ -169,6 +171,10 @@ public class CompareMatrix {
                             for (int i = 0; i < type_list_a.size(); i++) {
 
                                 CompiledEntryContainer component_a = type_list_a.get(i);
+
+                                if(cd_values_a_ignore.contains(component_a)) {
+                                    continue;
+                                }
 
                                 //--- Check if the component changed
                                 if(type_list_b.size() > i) {
@@ -192,7 +198,6 @@ public class CompareMatrix {
                                         }
 
                                     });
-
 
                                 }
                                 //--- COMPONENT: Removed

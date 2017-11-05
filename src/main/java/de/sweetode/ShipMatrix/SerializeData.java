@@ -23,15 +23,17 @@ public class SerializeData {
 
     public static void main(String[] args) throws IOException {
         CompareMatrix compareMatrix = new CompareMatrix();
-        SerializeData serializeData = new SerializeData(compareMatrix.diffAll());
+        SerializeData serializeData = new SerializeData(compareMatrix);
         serializeData.generate();
     }
 
     private final Gson gson = new GsonBuilder().create();
+    private final CompareMatrix compareMatrix;
     private final Map<String, Map<Ship, DiffReport>> reports;
 
-    public SerializeData(Map<String, Map<Ship, DiffReport>> data) {
-        this.reports = data;
+    public SerializeData(CompareMatrix compareMatrix) throws IOException {
+        this.compareMatrix = compareMatrix;
+        this.reports = compareMatrix.diffAll();
     }
 
     public void generate() throws IOException {

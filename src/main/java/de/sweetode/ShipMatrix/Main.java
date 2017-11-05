@@ -13,7 +13,7 @@ public class Main {
         CompareMatrix compareMatrix = new CompareMatrix();
 
         //--- Serialize
-        SerializeData serializeData = new SerializeData(compareMatrix.diffAll());
+        SerializeData serializeData = new SerializeData(compareMatrix);
         serializeData.generate();
     }
 

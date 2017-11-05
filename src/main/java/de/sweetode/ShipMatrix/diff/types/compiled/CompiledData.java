@@ -3,17 +3,14 @@ package de.sweetode.ShipMatrix.diff.types.compiled;
 import com.google.gson.JsonObject;
 import de.sweetode.ShipMatrix.diff.types.component.ComponentTypeFields;
 
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class CompiledData {
+public class CompiledData implements Cloneable {
 
     private final Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields;
 
     public CompiledData(Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> fields) {
-        this.fields = fields;
+        this.fields = Collections.unmodifiableMap(fields);
     }
 
     public Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> getFields() {
@@ -40,6 +37,21 @@ public class CompiledData {
         });
 
         return new CompiledData(fields);
+
+    }
+
+    @Override
+    public CompiledData clone() {
+
+        Map<ParentTypes, Map<ComponentTypeFields, List<CompiledEntryContainer>>> map = new HashMap<>();
+
+        this.fields.forEach((key, value) -> {
+            Map<ComponentTypeFields, List<CompiledEntryContainer>> _map = new HashMap<>();
+            value.forEach((_key, _value) -> _map.put(_key, new ArrayList<>(_value)));
+            map.put(key, _map);
+        });
+
+        return new CompiledData(map);
 
     }
 

@@ -4,15 +4,17 @@ import com.google.gson.JsonObject;
 import de.sweetode.ShipMatrix.diff.types.DataField;
 import de.sweetode.ShipMatrix.diff.types.ManufacturerFields;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Manufacturer {
+public class Manufacturer implements Cloneable {
 
     private final Map<DataField, String> values;
 
     public Manufacturer(Map<DataField, String> values) {
-        this.values = values;
+        this.values = Collections.unmodifiableMap(values);
     }
 
     public Map<DataField, String> getValues() {
@@ -33,4 +35,8 @@ public class Manufacturer {
 
     }
 
+    @Override
+    public Manufacturer clone() {
+        return new Manufacturer(new HashMap<>(this.values));
+    }
 }

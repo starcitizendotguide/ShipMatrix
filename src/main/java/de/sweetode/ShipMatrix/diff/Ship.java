@@ -8,7 +8,7 @@ import de.sweetode.ShipMatrix.diff.types.compiled.CompiledData;
 
 import java.util.*;
 
-public class Ship {
+public class Ship implements Cloneable {
 
     private final String name;
 
@@ -18,7 +18,7 @@ public class Ship {
 
     public Ship(Map<DataField, String> values, Manufacturer manufacturer, CompiledData compiledData) {
         this.name = values.get(DataFields.NAME);
-        this.values = values;
+        this.values = Collections.unmodifiableMap(values);
         this.manufacturer = manufacturer;
         this.compiledData = compiledData;
     }
@@ -62,6 +62,17 @@ public class Ship {
     @Override
     public String toString() {
         return this.getValues().get(DataFields.ID);
+    }
+
+    @Override
+    public Ship clone() {
+
+        Map<DataField, String> values = new HashMap<>(this.values);
+        Manufacturer manufacturer = this.manufacturer.clone();
+        CompiledData compiledData = this.compiledData.clone();
+
+        return new Ship(values, manufacturer, compiledData);
+
     }
 
 }
