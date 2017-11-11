@@ -15,6 +15,7 @@ public class Main {
         //--- Serialize
         SerializeData serializeData = new SerializeData(compareMatrix);
         serializeData.generate();
+
     }
 
 }

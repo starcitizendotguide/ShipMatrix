@@ -27,10 +27,21 @@ import java.util.*;
 
 public class CompareMatrix {
 
+    public static void main(String[] args) throws IOException {
+        new CompareMatrix().diffAll();
+    }
+
+    //----
     private final static Gson gson = new GsonBuilder().setPrettyPrinting().create();
     public final static DateFormat dateFormat = new SimpleDateFormat("d-MM-y");
 
+    private final Map<Integer, Map<String, Ship>> history = new LinkedHashMap<>();
+
     public CompareMatrix() {}
+
+    public Map<Integer, Map<String, Ship>> getHistory() {
+        return this.history;
+    }
 
     public Map<String, Map<Ship, DiffReport>> diffAll() throws IOException {
 
@@ -83,7 +94,17 @@ public class CompareMatrix {
             int id = Integer.valueOf(element.get("id").getAsString());
             element.remove("time_modified");
 
-            store_a.put(id, Ship.parse(element));
+            Ship ship = Ship.parse(element);
+
+            if(!(this.history.containsKey(id))) {
+                this.history.put(id, new HashMap<>());
+            }
+
+            if(!(this.history.get(id).containsKey(file_a.getName()))) {
+                this.history.get(id).put(file_a.getName(), ship);
+            }
+
+            store_a.put(id, ship);
         });
 
         Map<Integer, Ship> store_b = new HashMap<>();
@@ -93,7 +114,17 @@ public class CompareMatrix {
             int id = Integer.valueOf(element.get("id").getAsString());
             element.remove("time_modified");
 
-            store_b.put(id, Ship.parse(element));
+            Ship ship = Ship.parse(element);
+
+            if(!(this.history.containsKey(id))) {
+                this.history.put(id, new HashMap<>());
+            }
+
+            if(!(this.history.get(id).containsKey(file_b.getName()))) {
+                this.history.get(id).put(file_b.getName(), ship);
+            }
+
+            store_b.put(id, ship);
         });
 
         Map<Ship, DiffReport> diffReportMap = new LinkedHashMap<>();

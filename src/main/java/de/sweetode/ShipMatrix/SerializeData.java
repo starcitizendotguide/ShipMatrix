@@ -30,10 +30,12 @@ public class SerializeData {
     private final Gson gson = new GsonBuilder().create();
     private final CompareMatrix compareMatrix;
     private final Map<String, Map<Ship, DiffReport>> reports;
+    private final Map<Integer, Map<String, Ship>> history;
 
     public SerializeData(CompareMatrix compareMatrix) throws IOException {
         this.compareMatrix = compareMatrix;
         this.reports = compareMatrix.diffAll();
+        this.history = compareMatrix.getHistory();
     }
 
     public void generate() throws IOException {
@@ -83,9 +85,7 @@ public class SerializeData {
 
         //--- Ship History
         Map<Integer, Map<String, Ship>> shipHistory = new HashMap<>();
-        this.reports.forEach((date, value) -> value.forEach((ship, report) -> {
-
-            int id = Integer.valueOf(ship.getValues().get(DataFields.ID));
+        this.history.forEach((id, list) -> list.forEach((date, ship) -> {
 
             if (!(shipHistory.containsKey(id))) {
                 shipHistory.put(id, new LinkedHashMap<>());
@@ -93,9 +93,10 @@ public class SerializeData {
                 return;
             }
 
-            if(!(report.detectedChanges())) {
+            // @TODO
+            /*if(!(report.detectedChanges())) {
                 return;
-            }
+            }*/
 
             shipHistory.get(id).put(date.substring(0, date.indexOf('.')), ship);
 
