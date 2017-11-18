@@ -93,10 +93,16 @@ public class SerializeData {
                 return;
             }
 
-            // @TODO
-            /*if(!(report.detectedChanges())) {
-                return;
-            }*/
+            if(reports.containsKey(date)) {
+                Optional<Map.Entry<Ship, DiffReport>> report = this.reports.get(date)
+                        .entrySet().stream()
+                        .filter(e -> Integer.valueOf(e.getKey().getValues().get(DataFields.ID)) == id.intValue())
+                        .findAny();
+
+                if (report.isPresent() && !report.get().getValue().detectedChanges()) {
+                    return;
+                }
+            }
 
             shipHistory.get(id).put(date.substring(0, date.indexOf('.')), ship);
 
