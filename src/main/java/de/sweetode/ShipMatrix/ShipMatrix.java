@@ -2,6 +2,7 @@ package de.sweetode.ShipMatrix;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -37,47 +38,27 @@ public class ShipMatrix {
 
         List<JsonObject> matrix = new LinkedList<>();
 
-        final int MAX_OVERFLOW = 10;
-        int currentOverflow = MAX_OVERFLOW;
-        for(int i = 1;; i++) {
+        Request request = new Request.Builder()
+                .get()
+                .url("https://robertsspaceindustries.com/ship-matrix/index")
+                .build();
 
-            Request request = new Request.Builder()
-                                .get()
-                                .url(String.format("https://robertsspaceindustries.com/ship-matrix/index?chassis_id=%d", i))
-                            .build();
+        Response response = client.newCall(request).execute();
+        String body = response.body().string();
+        response.close();
 
-            Response response = client.newCall(request).execute();
-            String body = response.body().string();
-            response.close();
+        JsonArray ships = gson.fromJson(body, JsonObject.class).getAsJsonArray("data");
 
-            //--- Parse
-            JsonArray object = gson.fromJson(body, JsonObject.class).getAsJsonArray("data");
+        ships.forEach((JsonElement ship) -> {
 
-            if(object.size() == 0) {
-                currentOverflow--;
+            JsonObject entry = gson.fromJson(ship, JsonObject.class);
+            //--- Remove media
+            entry.remove("media");
+            entry.getAsJsonObject("manufacturer").remove("media");
 
-                if(currentOverflow <= 0) {
-                    System.out.println("Done!");
-                    break;
-                }
+            matrix.add(entry);
 
-                continue;
-            }
-            currentOverflow = MAX_OVERFLOW;
-
-            object.forEach(e -> {
-
-                JsonObject entry = e.getAsJsonObject();
-
-                //--- Remove media
-                entry.remove("media");
-                entry.getAsJsonObject("manufacturer").remove("media");
-
-                matrix.add(entry);
-
-            });
-
-        }
+        });
 
         client.dispatcher().cancelAll();
         return matrix;

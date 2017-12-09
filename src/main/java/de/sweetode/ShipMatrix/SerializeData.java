@@ -28,12 +28,10 @@ public class SerializeData {
     }
 
     private final Gson gson = new GsonBuilder().create();
-    private final CompareMatrix compareMatrix;
     private final Map<String, Map<Ship, DiffReport>> reports;
     private final Map<Integer, Map<String, Ship>> history;
 
     public SerializeData(CompareMatrix compareMatrix) throws IOException {
-        this.compareMatrix = compareMatrix;
         this.reports = compareMatrix.diffAll();
         this.history = compareMatrix.getHistory();
     }
